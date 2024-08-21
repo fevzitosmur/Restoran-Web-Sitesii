@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervasyon | Restoran</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/rezervation.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="home.html" class="nav-link">Anasayfa</a>
+            <a href="menu.html" class="nav-link">Menü</a>
+            <a href="about.html" class="nav-link">Hakkımızda</a>
+            <a href="rezervation.html" class="nav-link">Rezervasyon</a>
+            <a href="contact.html" class="nav-link">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="reservation" class="section">
+            <h2>Rezervasyon Yapın</h2>
+            <form id="reservation-form" action="#" method="post" class="reservation-form">
+                <div class="form-group">
+                    <label for="name">Ad Soyad:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-posta:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon Numarası:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Tarih:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Saat:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Misafir Sayısı:</label>
+                    <input type="number" id="guests" name="guests" min="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="special-requests">Özel İstekler:</label>
+                    <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+                </div>
+                <button type="submit" class="submit-button">Rezervasyon Yap</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2024 Restoran. Tüm hakları saklıdır.</p>
+    </footer>
+
+    <!-- JavaScript kodunu ekle -->
+    <script src="js/reservation.js"></script>
+</body>
+</html>

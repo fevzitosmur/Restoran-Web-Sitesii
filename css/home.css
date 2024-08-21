@@ -1,0 +1,117 @@
+/* home.css */
+
+#home-intro {
+    background-image: url('https://t4.ftcdn.net/jpg/05/51/93/35/360_F_551933523_nBWNQeC6vA8sDE6DDDQeo3YmSRQnlOjN.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background-color: #e67e22;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #d35400;
+}
+
+.dishes-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3px; /* Kartlar arası boşluk */
+}
+
+.dish-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+.dish-item:hover {
+    transform: translateY(-8px);
+}
+
+.dish-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.dish-item h3 {
+    font-size: 1.5em;
+    margin: 15px 0;
+    color: #333;
+}
+.dish-item p {
+    font-size: 1em;
+    color: #666;
+}
+  /* Müşteri yorumları kısmı */ 
+ /* reviews.css */
+
+.reviews-slider {
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-container {
+    display: flex;
+    animation: scroll 10s linear infinite;
+}
+
+.review-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 300px;
+    margin-right: 20px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.review-item p {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.reviewer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reviewer h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+.stars {
+    color: red;
+    font-size: 1.5em;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-5%);
+    }
+    100% {
+        transform: translateX(-8%);
+    }
+}
